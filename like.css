@@ -1,0 +1,128 @@
+.y-like {
+  display: inline-flex;
+  align-items: center;
+}
+
+.y-like .heart {
+  width: 18px;
+  height: 12px;
+  position: relative;
+}
+
+.y-like .heart::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+
+.y-like .heart .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 14px;
+  transform: scale(0);
+  transition: all .3s cubic-bezier(0.42, 0, 0.34, 1.55);
+}
+
+.y-like .heart .fa.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.y-like .heart .fa.fa-heart.active {
+  color: red;
+}
+
+.y-like .count {
+  display: inline-flex;
+  font-size: 14px;
+  height: 24px;
+}
+
+.y-like .num {
+  width: 8px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  transition: all .3s;
+  position: relative;
+}
+
+.y-like .num span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.y-like .num span.upup {
+  animation: upup .5s
+}
+
+.y-like .num span.upupin {
+  opacity: 0;
+  animation: upupin .5s
+}
+
+.y-like .num span.down {
+  animation: down .5s
+}
+
+.y-like .num span.downin {
+  opacity: 0;
+  animation: downin .5s
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downin {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes upup {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes upupin {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
