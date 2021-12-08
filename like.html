@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./like.css">
+  <style>
+    .wrap {
+      margin: 50px
+    }
+    .btn {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="y-like">
+      <div class="heart" data-flag="0">
+        <i class="fa fa-heart-o active"></i>
+        <i class="fa fa-heart"></i>
+      </div>
+      <div class="count"></div>
+    </div>
+  </div>
+  
+  <button class="btn" onclick="like.reduceNum()">减一下</button>
+  <button class="btn" onclick="like.addNum()">加一下</button>
+  <button class="btn" onclick="like.updateValue(99)">加到100下</button>
+
+  <script src="./like.js"></script>
+  <script>
+    var like = new Like({
+      element: document.querySelector('.y-like'),
+      value: 11,
+      click: true
+    })
+  </script>
+</body>
+</html>
