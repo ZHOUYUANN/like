@@ -1,6 +1,8 @@
 # like
 点赞动画
 
+<img width="30%" src="https://github.com/ZHOUYUANN/like/blob/main/like.gif" />
+
 ## like 使用方法
 
 首先引入插件 `like.js` 和 `like.css`
