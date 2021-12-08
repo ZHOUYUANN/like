@@ -1,7 +1,7 @@
 # like
 点赞动画
 
-<img width="30%" src="https://github.com/ZHOUYUANN/like/blob/main/like.gif" />
+<img width="30%" src="https://cdn.jsdelivr.net/gh/ZHOUYUANN/BlogBed@master/20210919/like.2x0jhvwpazq0.gif" />
 
 ## like 使用方法
 
