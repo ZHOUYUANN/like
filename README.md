@@ -33,10 +33,10 @@
 
 `val` 是一个数字类型，可以手动配置点赞初始化的数量。
 
-#### `like.addNum(val)`
+#### like.addNum(val)
 
 `val` 是一个数字类型，可以手动配置点赞 +1。
 
-#### `like.reduceNum(val)`
+#### like.reduceNum(val)
 
 `val` 是一个数字类型，可以手动配置点赞 -1。
